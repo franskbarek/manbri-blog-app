@@ -14,6 +14,7 @@ export default function Homepage() {
     const fetchPosts = async () => {
       const res = await axiosInstace.get("/posts" + search);
       setPosts(res.data);
+      console.log(res.data);
     };
 
     fetchPosts();
