@@ -1,6 +1,6 @@
-import axios from "axios";
 import { useState, useContext } from "react";
 import Sidebar from "../../components/sidebar/Sidebar";
+import { axiosInstace } from "../../config";
 import { Context } from "../../context/Context";
 import "./settings.css";
 
@@ -30,11 +30,11 @@ export default function Settings() {
       data.append("file", file);
       updatedUser.profilePic = filename;
       try {
-        await axios.post("/upload", data);
+        await axiosInstace.post("/upload", data);
       } catch (err) {}
     }
     try {
-      const res = await axios.put("/users/" + user._id, updatedUser);
+      const res = await axiosInstace.put("/users/" + user._id, updatedUser);
       setSuccess(true);
       dispatch({ type: "UPDATE_SUCCESS", payload: res.data });
     } catch (err) {
