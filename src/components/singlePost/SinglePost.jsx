@@ -10,7 +10,6 @@ export default function SinglePost() {
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
   const PF = "https://different-fox-tuxedo.cyclic.app/images/";
-  console.log(PF);
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
