@@ -37,5 +37,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000/backend"
+  "proxy": "https://different-fox-tuxedo.cyclic.app/backend"
 }
