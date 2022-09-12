@@ -2,8 +2,8 @@ import "./post.css";
 import { Link } from "react-router-dom";
 
 export default function Post({ post }) {
-  const PF = "https://different-fox-tuxedo.cyclic.app/images/";
-
+  const PF = "https://different-fox-tuxedo.cyclic.app/backend/images/";
+  console.log(PF);
   return (
     <div className="post">
       <img className="postImg" src={PF + post.photo} alt="" />
