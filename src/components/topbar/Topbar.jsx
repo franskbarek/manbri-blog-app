@@ -5,7 +5,7 @@ import "./topbar.css";
 
 export default function Topbar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "https://different-fox-tuxedo.cyclic.app/images/";
+  const PF = process.env.REACT_APP_PF;
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });

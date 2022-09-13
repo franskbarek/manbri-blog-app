@@ -2,8 +2,7 @@ import "./post.css";
 import { Link } from "react-router-dom";
 
 export default function Post({ post }) {
-  const PF = "process.env.REACT_APP_BASE_URL/images/";
-  console.log(PF);
+  const PF = process.env.REACT_APP_PF;
   return (
     <div className="post">
       <img className="postImg" src={PF + post.photo} alt="" />

@@ -12,7 +12,7 @@ export default function Settings() {
   const [success, setSuccess] = useState(false);
 
   const { user, dispatch } = useContext(Context);
-  const PF = "https://different-fox-tuxedo.cyclic.app/images/";
+  const PF = process.env.REACT_APP_PF;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
