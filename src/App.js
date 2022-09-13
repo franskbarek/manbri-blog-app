@@ -9,6 +9,9 @@ import { Routes, Route } from "react-router-dom";
 import { Context } from "../src/context/Context";
 import { useContext } from "react";
 
+const tesEnv = process.env.REACT_APP_TES;
+console.log(tesEnv);
+
 export default function App() {
   const { user } = useContext(Context);
   return (
