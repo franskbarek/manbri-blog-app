@@ -2,7 +2,7 @@ import "./post.css";
 import { Link } from "react-router-dom";
 
 export default function Post({ post }) {
-  const PF = "https://different-fox-tuxedo.cyclic.app/images/";
+  const PF = "process.env.REACT_APP_BASE_URL/images/";
   console.log(PF);
   return (
     <div className="post">
